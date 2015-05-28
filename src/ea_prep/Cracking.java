@@ -114,7 +114,15 @@ public class Cracking
 	//totalways= totalways+numChangeWays(quarter,25)+numChangeWays(dime,10)+numChangeWays(nickel,5)+numChangeWays(penny,1);
 	return totalways;
     }
-    
+    /**
+     * Given a sequence of numbers (34128) and an input map such as a dial pad on a phone (2->[a,b,c], 3->[d,e,f], 4->[g,h,i]) 
+     * write an algorithm to return all possible words from the sequence.
+
+	E.g. Input: 232
+	Output: [ada, adb, adc, aea, aeb, aec, afa, afb, afc, bda, bdb, bdc, bea, beb, bec, 
+	bfa, bfb, bfc, cda, cdb, cdc, cea, ceb, cec, cfa, cfb, cfc]  
+
+     */
     public ArrayList<String> getPerms( int input)
     {
 	ArrayList<String> retval= new ArrayList<String>();
@@ -160,6 +168,13 @@ public class Cracking
 
 	
     }
+    /**
+     * Given a sorted array [0-99]
+	With input: [1, 5, 45, 86]
+	Write a function that prints the empty regions, example Output: “0,2-4,6-44,46-85,87-99”  
+     * @param input
+     * @return
+     */
     public ArrayList<String> findIntervals( ArrayList<Integer> input)
     {
 	ArrayList<String> retval = new ArrayList<String>();
